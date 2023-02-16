@@ -1,0 +1,23 @@
+.delete{
+
+box-sizing:border-box;
+background-color:pink;
+margin:100px 500px 500px;
+width:400px;
+height:300px;
+border-radius:10px;
+text-align:center;
+padding-top:10px;
+font-family:verdana;
+
+}
+input[type=submit]{
+height:30px;
+width:250px;
+border:none;
+border-radius:5px;
+background-color:red ;
+color:white;
+}
+
+

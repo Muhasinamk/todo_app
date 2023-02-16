@@ -1,0 +1,23 @@
+.create{
+
+box-sizing:border-box;
+background-color:white;
+margin left:300px;
+width:450px;
+height:500px;
+border-radius:10px;
+text-align:center;
+padding-top:10px;
+font-family:calista;
+
+
+
+}
+input[type=submit]{
+height:30px;
+width:250px;
+border:none;
+border-radius:5px;
+background-color:#350539 ;
+color:white;
+}

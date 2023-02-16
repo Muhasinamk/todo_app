@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <link rel="stylesheet" href="{% static 'css/taskliststyle.css' %}">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Task-Lists</title>
+</head>
+<body>
+<div class="tasklist">
+<h1 style="color:#4B1583">TODO LISTS</h1>
+    <a href="{% url 'task-create' %}" style="color:white;background-color:#0B6261 "><i class="fa fa-tasks"  style="font-size:48px;"></i></a>
+    <br>
+    <br>
+<table>
+     <tr>
+    <th>Tasks</th>
+    <th>Time</th>
+         <th>Status</th>
+    <th>Description</th>
+         <th>View</th>
+         <th>Edit</th>
+         <th>Delete</th>
+    </tr>
+
+    {% for tasks in task %}
+    <tr>
+       <td>{{tasks.title}}</td>
+        <td>{{tasks.created}}</td>
+        <td>{{tasks.completed}}</td>
+        <td>{{tasks.description}}</td>
+        <td><a href="{% url 'task-detail' tasks.id %}" ><i class="fa fa-eye"></i></a></td>
+        <td><a href="{% url 'task-update' tasks.id %}" style="color:#228C3A"><i class="fa fa-edit"></i></a></td>
+        <td><a href="{% url 'task-delete' tasks.id %}" style="color:red"><i class="fa fa-trash"></i></a></td>
+    </tr>
+    {% endfor %}
+</table>
+    </div>
+</body>
+</html>

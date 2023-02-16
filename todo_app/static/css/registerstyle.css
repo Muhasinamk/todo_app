@@ -1,0 +1,25 @@
+body{
+background-color:#4D66EF ;
+
+}
+
+.register{
+
+box-sizing:border-box;
+background-color:white;
+margin:100px 500px 500px;
+width:350px;
+height:300px;
+border-radius:10px;
+text-align:center;
+padding-top:10px;
+font-family:verdana;
+
+}
+
+button{
+height:30px;
+width:250px;
+border:none;
+border-radius:5px;
+}

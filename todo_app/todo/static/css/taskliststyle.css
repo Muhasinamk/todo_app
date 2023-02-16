@@ -1,0 +1,30 @@
+
+
+.tasklist{
+box-sizing:border-box;
+background-color:#C86EA5;
+margin:100px 300px 500px;
+width:800px;
+height:700px;
+border-radius:10px;
+text-align:center;
+padding-top:10px;
+font-family:calista;
+
+
+}
+table, th, td {
+
+  border: 1px solid white;
+  border-collapse: collapse;
+  background-color:#C895B4 ;
+  align:center;
+  margin-left:50px;
+}
+
+ th, td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
